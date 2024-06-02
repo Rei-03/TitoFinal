@@ -23,8 +23,8 @@ const IMAGENES : Dictionary = {
 	'Carbon'  :   preload ("res://icon.svg"),
 	'Mia'     :   preload ("res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_1.png"),
 	'Baron'   :   preload ("res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png"),
-	'Maton1'  :   preload ("res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_0.png"),
-	'Maton2'  :   preload ("res://assets/Light Bandit/Idle/LightBandit_Idle_0.png"),
+	'Maton1'  :   preload ("res://assets/Light Bandit/Idle/LightBandit_Idle_0.png"),
+	'Maton2'  :   preload ("res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_0.png"),
 }
 
 	#'Tito : Un paso mas cerca. Este salitre es crucial, pero no puedo dejar que caiga en manos equivocadas.',#0
@@ -43,14 +43,14 @@ const EscenaMaton1 : Array = [
 	'Maton1 : ¿Que crees que estas haciendo, chico?',#0
 	'Tito : Solo estoy asegurandome de que la fiesta de esta noche sea inolvidable.',#1
 ]
-const secuenciaNPCEscena2 : Array = [0,6]
+const secuenciaNPCEscena2 : Array = [6,0]
 
 #---------------------------------------------------------
 const EscenaMaton2 : Array = [
 	'Maton2 : El Baron no estara contento con esto.',#0
 	'Tito : Entonces sera mejor que no le digan.',#1
 ]
-const secuenciaNPCEscena3 : Array = [0,7]
+const secuenciaNPCEscena3 : Array = [7,0]
 
 #------------------------------------------------------
 const EscenaBaron : Array = [
@@ -58,7 +58,7 @@ const EscenaBaron : Array = [
 	'Tito : Disfruta tu victoria, pero recuerda, no todo es lo que parece.',#1
 	'Baron : !¿Que has hecho?!',#2
 ]
-const secuenciaNPCEscena4 : Array = [0,5]
+const secuenciaNPCEscena4 : Array = [5,0,5]
 
 #-------------------------------------------------
 var chats : int = 0
