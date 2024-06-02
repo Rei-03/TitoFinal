@@ -21,10 +21,10 @@ const IMAGENES : Dictionary = {
 	'Nitrato' :   preload ("res://icon.svg"),
 	'Azufre'  :   preload ("res://icon.svg"),
 	'Carbon'  :   preload ("res://icon.svg"),
-	'Mia'     :   preload ("res://icon.svg"),
-	'Baron'   :   preload ("res://icon.svg"),
-	'Maton1'  :   preload ("res://icon.svg"),
-	'Maton2'  :   preload ("res://icon.svg"),
+	'Mia'     :   preload ("res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_1.png"),
+	'Baron'   :   preload ("res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png"),
+	'Maton1'  :   preload ("res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_0.png"),
+	'Maton2'  :   preload ("res://assets/Light Bandit/Idle/LightBandit_Idle_0.png"),
 }
 
 	#'Tito : Un paso mas cerca. Este salitre es crucial, pero no puedo dejar que caiga en manos equivocadas.',#0

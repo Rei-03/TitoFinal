@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Tito"
+config/name="TitoVerse"
+config/description="Juego de Tito"
 run/main_scene="res://scenes/views/Menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"

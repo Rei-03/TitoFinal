@@ -1,16 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://cq6r6cxq1bcrg"]
+[gd_scene load_steps=3 format=3 uid="uid://cq6r6cxq1bcrg"]
 
+[ext_resource type="Texture2D" uid="uid://nc2muerx3yub" path="res://assets/TITO TITAN 02  copia copia.jpg" id="1_52f52"]
 [ext_resource type="Script" path="res://scenes/views/Button.gd" id="1_m8qtn"]
 
 [node name="Menu" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="TitoTitan02CopiaCopia" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(578, 731)
+scale = Vector2(0.205339, 0.187641)
+texture = ExtResource("1_52f52")
+
 [node name="Button" type="Button" parent="CanvasLayer"]
-offset_left = 532.0
-offset_top = 419.0
-offset_right = 578.0
-offset_bottom = 450.0
+offset_left = 783.0
+offset_top = 420.0
+offset_right = 937.0
+offset_bottom = 471.0
 text = "Start"
 script = ExtResource("1_m8qtn")
 
