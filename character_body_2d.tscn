@@ -1,0 +1,186 @@
+[gd_scene load_steps=18 format=3 uid="uid://batnqspv0wed5"]
+
+[ext_resource type="Texture2D" uid="uid://y6gdudogk6i" path="res://assets/Tito/torso_inferior.PNG" id="1_80m4g"]
+[ext_resource type="Texture2D" uid="uid://b3a7k3am2bh1f" path="res://assets/Tito/brazo_sup_izq.PNG" id="1_o5vmd"]
+[ext_resource type="Texture2D" uid="uid://b0j20tlm5wb58" path="res://assets/Tito/Torso_superior.PNG" id="2_mpy2t"]
+[ext_resource type="Texture2D" uid="uid://bri2horrqsvos" path="res://assets/Tito/mano_izq.PNG" id="2_omasm"]
+[ext_resource type="Texture2D" uid="uid://cjse5nfhobrjb" path="res://assets/Tito/cuello.PNG" id="3_nuk31"]
+[ext_resource type="Texture2D" uid="uid://4kkn7870x0df" path="res://assets/Tito/brazo_inf_izq.PNG" id="3_tfpsa"]
+[ext_resource type="Texture2D" uid="uid://dtrlpsieawpfd" path="res://assets/Tito/cabeza.PNG" id="4_2io3d"]
+[ext_resource type="Texture2D" uid="uid://jo3jsq10bgny" path="res://assets/Tito/pierna_izq_sup.PNG" id="4_gxjy0"]
+[ext_resource type="Texture2D" uid="uid://c6p46pjne8prl" path="res://assets/Tito/pierna_izq_inf.PNG" id="5_gu7t0"]
+[ext_resource type="Texture2D" uid="uid://bclh3ci6ndde0" path="res://assets/Tito/pie_izq.PNG" id="6_hv60o"]
+[ext_resource type="Texture2D" uid="uid://vj13qkeei4yl" path="res://assets/Tito/pierna_der_sup.PNG" id="7_oqb8m"]
+[ext_resource type="Texture2D" uid="uid://byr55b0kh8ylt" path="res://assets/Tito/pierna_der_inf.PNG" id="8_fch6e"]
+[ext_resource type="Texture2D" uid="uid://dh8g55grnc6n3" path="res://assets/Tito/pie_der.PNG" id="9_rn7sr"]
+[ext_resource type="Texture2D" uid="uid://plqlityttkue" path="res://assets/Tito/brazo_sup_der.PNG" id="14_n2dyl"]
+[ext_resource type="Texture2D" uid="uid://bxy2ru8jq6cl4" path="res://assets/Tito/mano_der.PNG" id="15_w3dy6"]
+[ext_resource type="Texture2D" uid="uid://sqsf5oi2sl6n" path="res://assets/Tito/brazo_inf_der.PNG" id="16_onop1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pq1l2"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_pq1l2")
+
+[node name="parts" type="Node" parent="."]
+
+[node name="BrazoSupIzq" type="Sprite2D" parent="parts"]
+position = Vector2(47, 1)
+rotation = -0.0349015
+texture = ExtResource("1_o5vmd")
+
+[node name="ManoIzq" type="Sprite2D" parent="parts"]
+position = Vector2(107, 66)
+texture = ExtResource("2_omasm")
+
+[node name="BrazoInfIzq" type="Sprite2D" parent="parts"]
+position = Vector2(81, 38)
+texture = ExtResource("3_tfpsa")
+
+[node name="PiernaIzqSup" type="Sprite2D" parent="parts"]
+position = Vector2(8, 104)
+rotation = 0.271584
+texture = ExtResource("4_gxjy0")
+
+[node name="PiernaIzqInf" type="Sprite2D" parent="parts"]
+position = Vector2(14, 175)
+texture = ExtResource("5_gu7t0")
+
+[node name="PieIzq" type="Sprite2D" parent="parts"]
+position = Vector2(35, 227)
+texture = ExtResource("6_hv60o")
+
+[node name="PiernaDerSup" type="Sprite2D" parent="parts"]
+position = Vector2(-9, 110)
+texture = ExtResource("7_oqb8m")
+
+[node name="PiernaDerInf" type="Sprite2D" parent="parts"]
+position = Vector2(-6, 177)
+texture = ExtResource("8_fch6e")
+
+[node name="PieDer" type="Sprite2D" parent="parts"]
+position = Vector2(4, 228)
+texture = ExtResource("9_rn7sr")
+
+[node name="TorsoInferior" type="Sprite2D" parent="parts"]
+position = Vector2(1, 50)
+texture = ExtResource("1_80m4g")
+
+[node name="TorsoSuperior" type="Sprite2D" parent="parts"]
+rotation = -0.0349015
+texture = ExtResource("2_mpy2t")
+
+[node name="Cuello" type="Sprite2D" parent="parts"]
+position = Vector2(-4, -36)
+rotation = -0.0349015
+texture = ExtResource("3_nuk31")
+
+[node name="Cabeza" type="Sprite2D" parent="parts"]
+position = Vector2(10, -51)
+rotation = -0.0349015
+texture = ExtResource("4_2io3d")
+
+[node name="BrazoSupDer" type="Sprite2D" parent="parts"]
+position = Vector2(-45, 1)
+rotation = -0.0349015
+texture = ExtResource("14_n2dyl")
+
+[node name="ManoDer" type="Sprite2D" parent="parts"]
+position = Vector2(-92, 61)
+rotation = -0.0349015
+texture = ExtResource("15_w3dy6")
+
+[node name="BrazoInfDer" type="Sprite2D" parent="parts"]
+position = Vector2(-69, 34)
+rotation = -0.0349015
+texture = ExtResource("16_onop1")
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+
+[node name="base" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(3, 101)
+
+[node name="BodyDown" type="Bone2D" parent="Skeleton2D/base"]
+position = Vector2(-1, -33)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/base/BodyDown"]
+position = Vector2(-1, -18)
+remote_path = NodePath("../../../../parts/TorsoInferior")
+
+[node name="BodyUp" type="Bone2D" parent="Skeleton2D/base/BodyDown"]
+position = Vector2(0, -38)
+rotation = -0.0349015
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/base/BodyDown/BodyUp"]
+position = Vector2(-0.951949, -30.0515)
+remote_path = NodePath("../../../../../parts/TorsoSuperior")
+
+[node name="Neck" type="Bone2D" parent="Skeleton2D/base/BodyDown/BodyUp"]
+position = Vector2(0, -53)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/base/BodyDown/BodyUp/Neck"]
+position = Vector2(-3.69331, -13.1692)
+remote_path = NodePath("../../../../../../parts/Cuello")
+
+[node name="Head" type="Bone2D" parent="Skeleton2D/base/BodyDown/BodyUp/Neck"]
+position = Vector2(0, -18)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/base/BodyDown/BodyUp/Neck/Head"]
+position = Vector2(10.8216, -9.67151)
+remote_path = NodePath("../../../../../../../parts/Cabeza")
+
+[node name="ShoulderRight" type="Bone2D" parent="Skeleton2D/base/BodyDown/BodyUp"]
+position = Vector2(-29, -45)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/base/BodyDown/BodyUp/ShoulderRight"]
+position = Vector2(-16.9594, 14.3776)
+remote_path = NodePath("../../../../../../parts/BrazoSupDer")
+
+[node name="ArmRight" type="Bone2D" parent="Skeleton2D/base/BodyDown/BodyUp/ShoulderRight"]
+position = Vector2(-27, 28)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/base/BodyDown/BodyUp/ShoulderRight/ArmRight"]
+position = Vector2(-15.0963, 18.5201)
+remote_path = NodePath("../../../../../../../parts/BrazoInfDer")
+
+[node name="HandRight" type="Bone2D" parent="Skeleton2D/base/BodyDown/BodyUp/ShoulderRight/ArmRight"]
+position = Vector2(-34, 41)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/base/BodyDown/BodyUp/ShoulderRight/ArmRight/HandRight"]
+position = Vector2(-5.02448, 3.70104)
+remote_path = NodePath("../../../../../../../../parts/ManoDer")
+
+[node name="ShoulderLeft" type="Bone2D" parent="Skeleton2D/base/BodyDown/BodyUp"]
+position = Vector2(29, -46)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/base/BodyDown/BodyUp/ShoulderLeft"]
+position = Vector2(16.9845, 18.5879)
+remote_path = NodePath("../../../../../../parts/BrazoSupIzq")
+
+[node name="ArmLeft" type="Bone2D" parent="Skeleton2D/base/BodyDown/BodyUp/ShoulderLeft"]
+position = Vector2(36, 41)
+
+[node name="HandLeft" type="Bone2D" parent="Skeleton2D/base/BodyDown/BodyUp/ShoulderLeft/ArmLeft"]
+position = Vector2(33, 34)
+
+[node name="LegsUpLeft" type="Bone2D" parent="Skeleton2D/base"]
+position = Vector2(13, -31)
+
+[node name="LegsDownLeft" type="Bone2D" parent="Skeleton2D/base/LegsUpLeft"]
+position = Vector2(0, 77)
+
+[node name="FootLeft" type="Bone2D" parent="Skeleton2D/base/LegsUpLeft/LegsDownLeft"]
+position = Vector2(1, 85)
+
+[node name="LegsRughtUp" type="Bone2D" parent="Skeleton2D/base"]
+position = Vector2(-12, -27)
+
+[node name="LegsRightDown" type="Bone2D" parent="Skeleton2D/base/LegsRughtUp"]
+position = Vector2(0, 75)
+
+[node name="FootRight" type="Bone2D" parent="Skeleton2D/base/LegsRughtUp/LegsRightDown"]
+position = Vector2(1, 82)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

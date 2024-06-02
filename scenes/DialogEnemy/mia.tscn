@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://ckskrj04j6kkd"]
+
+[ext_resource type="Texture2D" uid="uid://crml3t4qyt44u" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_1.png" id="1_o0ehd"]
+[ext_resource type="Texture2D" uid="uid://mogyibg8v6ow" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_2.png" id="2_372ia"]
+[ext_resource type="Texture2D" uid="uid://n74k0h6xihhj" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_3.png" id="3_oi3b3"]
+[ext_resource type="Texture2D" uid="uid://okxer8mwgds4" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_4.png" id="4_qip3l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4dtd"]
+size = Vector2(300, 99)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tocwi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_o0ehd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_372ia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oi3b3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qip3l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Mia" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 39.5)
+shape = SubResource("RectangleShape2D_a4dtd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_tocwi")
+frame_progress = 0.235288

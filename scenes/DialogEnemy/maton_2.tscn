@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://ey8n2m5jdx84"]
+
+[ext_resource type="Texture2D" uid="uid://us0xifj3b7nw" path="res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_0.png" id="1_0kafs"]
+[ext_resource type="Texture2D" uid="uid://db43ndokenrrq" path="res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_2.png" id="2_mo5cw"]
+[ext_resource type="Texture2D" uid="uid://lumvn0wst3nd" path="res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_1.png" id="3_2lcfm"]
+[ext_resource type="Texture2D" uid="uid://bhvmvfdyc5vwf" path="res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_3.png" id="4_mn02m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4dtd"]
+size = Vector2(300, 99)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tocwi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0kafs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mo5cw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2lcfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mn02m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Maton2" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 39.5)
+shape = SubResource("RectangleShape2D_a4dtd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_tocwi")

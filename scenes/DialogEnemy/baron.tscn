@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://bfsvox1jjg760"]
+
+[ext_resource type="Texture2D" uid="uid://dcw8jjujhgvni" path="res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png" id="1_8vd33"]
+[ext_resource type="Texture2D" uid="uid://qcxootjad8pd" path="res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_2.png" id="2_3d106"]
+[ext_resource type="Texture2D" uid="uid://sx2hqfluf6ot" path="res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_3.png" id="3_c120d"]
+[ext_resource type="Texture2D" uid="uid://diwvkcfpfa0ne" path="res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_4.png" id="4_7siu0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4dtd"]
+size = Vector2(315, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tocwi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8vd33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3d106")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_c120d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7siu0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Baron" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(136.5, 73)
+shape = SubResource("RectangleShape2D_a4dtd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(5, -34)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_tocwi")
+frame_progress = 0.0199141

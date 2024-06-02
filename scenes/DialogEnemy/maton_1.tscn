@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://dcpr82mseaify"]
+
+[ext_resource type="Texture2D" uid="uid://cebf1xcckkyil" path="res://assets/Light Bandit/Idle/LightBandit_Idle_0.png" id="1_2kx2d"]
+[ext_resource type="Texture2D" uid="uid://b380e6po8uhmp" path="res://assets/Light Bandit/Idle/LightBandit_Idle_1.png" id="2_aej4o"]
+[ext_resource type="Texture2D" uid="uid://bcddswa88eydx" path="res://assets/Light Bandit/Idle/LightBandit_Idle_2.png" id="3_h4i5c"]
+[ext_resource type="Texture2D" uid="uid://b6vvpv2q6jxd6" path="res://assets/Light Bandit/Idle/LightBandit_Idle_3.png" id="4_chvcr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4dtd"]
+size = Vector2(300, 99)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_23ec7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2kx2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_aej4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_h4i5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_chvcr")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Maton1" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 39.5)
+shape = SubResource("RectangleShape2D_a4dtd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_23ec7")
+animation = &"Idle"
