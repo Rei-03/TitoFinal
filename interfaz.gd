@@ -101,7 +101,7 @@ func _on_maton_2_body_entered(body):
 # falta el baron 
 func _on_baron_body_entered(body):
 	if body.is_in_group('PERSONAJES'):
-		poner_TEXTO(EscenaBaron[chats],NPCS.Baron,IMAGENES[[secuenciaNPCEscena4[chats]]])
+		poner_TEXTO(EscenaBaron[chats],NPCS.Baron,IMAGENES[Imagenes[secuenciaNPCEscena4[chats]]])
 		chats +=1
 
 func _on_boton_pressed():
