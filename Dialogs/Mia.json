@@ -1,0 +1,20 @@
+{
+	"personajes": [
+		"Mia",
+		"Tito"
+	],
+	"dialogos": [
+		{
+			"personaje": "Mia",
+			"texto": "Mi pana tas de pinga, q feo cojone"	
+		},
+		{
+			"personaje": "Tito",
+			"texto": "Mia no te cojas pa eso, con la cara esa pareces una saleta explota en rodapie"	
+		},
+		{
+			"personaje": "Mia",
+			"texto": "Yo me siento muy Tortillera"	
+		}	
+	]
+}

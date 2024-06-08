@@ -922,6 +922,7 @@ _data = {
 
 [node name="Tito" type="CharacterBody2D" groups=["PERSONAJES"]]
 scale = Vector2(0.5, 0.5)
+collision_mask = 9
 script = ExtResource("1_u2frd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -931,21 +932,21 @@ shape = SubResource("RectangleShape2D_pq1l2")
 [node name="SkeletonParts" type="Node" parent="."]
 
 [node name="BrazoSupIzq" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(32.4702, 10.1212)
+position = Vector2(32.4701, 10.1212)
 rotation = 0.455582
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("1_kwaiw")
 
 [node name="ManoIzq" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(64.5163, 25.6782)
+position = Vector2(64.5162, 25.6782)
 rotation = -0.948766
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("2_cpj64")
 
 [node name="BrazoInfIzq" type="Sprite2D" parent="SkeletonParts"]
 position = Vector2(46.4364, 25.5766)
 rotation = -0.739748
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("3_fmh78")
 
 [node name="PiernaIzqSup" type="Sprite2D" parent="SkeletonParts"]
@@ -991,39 +992,39 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_lkaq4")
 
 [node name="TorsoSuperior" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(11.8733, 0.265049)
+position = Vector2(11.8733, 0.265061)
 rotation = 0.455582
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("11_iyqib")
 
 [node name="Cuello" type="Sprite2D" parent="SkeletonParts"]
 position = Vector2(18.5559, -16.5608)
 rotation = 0.413458
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("12_ociio")
 
 [node name="Cabeza" type="Sprite2D" parent="SkeletonParts"]
 position = Vector2(27.0146, -20.8596)
 rotation = 0.301403
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("13_3yxue")
 
 [node name="BrazoSupDer" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-3.4994, -8.53183)
+position = Vector2(-3.4994, -8.53181)
 rotation = -0.037423
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("14_i2bec")
 
 [node name="ManoDer" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-1.45961, 27.408)
+position = Vector2(-1.4596, 27.408)
 rotation = -1.06523
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("15_vxbdv")
 
 [node name="BrazoInfDer" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-5.29293, 10.0344)
+position = Vector2(-5.29292, 10.0344)
 rotation = -0.935002
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("16_pxccu")
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
