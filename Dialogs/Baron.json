@@ -1,0 +1,24 @@
+{
+	"personajes": [
+		"Baron",
+		"Tito"
+	],
+	"dialogos": [
+		{
+			"personaje": "Baron",
+			"texto": "!Al fin, la formula es mia!"	
+		},
+		{
+			"personaje": "Tito",
+			"texto": "Disfruta tu victoria, pero recuerda, no todo es lo que parece."	
+		},
+        {
+			"personaje": "Baron",
+			"texto": "!¿Que has hecho?!"	
+		},
+		{
+			"personaje": "Tito",
+			"texto": "Solo un poco de alquimia. La verdadera formula esta segura...y el espectaculo acaba de comenzar"	
+		}
+	]
+}

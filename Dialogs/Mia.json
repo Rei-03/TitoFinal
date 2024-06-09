@@ -6,15 +6,15 @@
 	"dialogos": [
 		{
 			"personaje": "Mia",
-			"texto": "Mi pana tas de pinga, q feo cojone"	
+			"texto": "Tito, ¿Que haces aqui?"	
 		},
 		{
 			"personaje": "Tito",
-			"texto": "Mia no te cojas pa eso, con la cara esa pareces una saleta explota en rodapie"	
+			"texto": "Necesito carbon, pero no el tipo que piensas. ¿Puedes ayudarme a encontrar algo que haga chispas pero no explote?"	
 		},
 		{
 			"personaje": "Mia",
-			"texto": "Yo me siento muy Tortillera"	
+			"texto": "Por supuesto, !vamos a iluminar el cielo, no a quemarlo!"	
 		}	
 	]
 }

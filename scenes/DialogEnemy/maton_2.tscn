@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://ey8n2m5jdx84"]
+[gd_scene load_steps=8 format=3 uid="uid://ey8n2m5jdx84"]
 
 [ext_resource type="Texture2D" uid="uid://us0xifj3b7nw" path="res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_0.png" id="1_0kafs"]
+[ext_resource type="PackedScene" uid="uid://bhtnjlladfgra" path="res://scenes/CustonNodes/area_dialog.tscn" id="1_ca2eu"]
 [ext_resource type="Texture2D" uid="uid://db43ndokenrrq" path="res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_2.png" id="2_mo5cw"]
 [ext_resource type="Texture2D" uid="uid://lumvn0wst3nd" path="res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_1.png" id="3_2lcfm"]
 [ext_resource type="Texture2D" uid="uid://bhvmvfdyc5vwf" path="res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_3.png" id="4_mn02m"]
@@ -30,6 +31,9 @@ animations = [{
 
 [node name="Maton2" type="Area2D"]
 
+[node name="AreaDialog" parent="." instance=ExtResource("1_ca2eu")]
+path = "res://Dialogs/Malo2.json"
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(10, 39.5)
 shape = SubResource("RectangleShape2D_a4dtd")
@@ -38,3 +42,7 @@ shape = SubResource("RectangleShape2D_a4dtd")
 texture_filter = 1
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_tocwi")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0

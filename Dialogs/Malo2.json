@@ -1,0 +1,16 @@
+{
+	"personajes": [
+		"Malo2",
+		"Tito"
+	],
+	"dialogos": [
+		{
+			"personaje": "Malo2",
+			"texto": "El baron no estara contento con esto"	
+		},
+		{
+			"personaje": "Tito",
+			"texto": "Entonces sera mejor que no le digan"	
+		}
+	]
+}

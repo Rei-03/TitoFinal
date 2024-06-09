@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bthh4agdqbi5x"]
 
 [ext_resource type="Script" path="res://interfaz.gd" id="1_2drki"]
-[ext_resource type="Texture2D" uid="uid://bre4gwc7nnbtc" path="res://icon.svg" id="1_xut0p"]
+[ext_resource type="Texture2D" uid="uid://buivk261wepyg" path="res://icon.svg" id="1_xut0p"]
 
 [sub_resource type="Animation" id="Animation_2k1xi"]
 tracks/0/type = "value"
@@ -49,7 +49,7 @@ offset_top = 486.0
 offset_right = 129.0
 offset_bottom = 545.0
 scale = Vector2(8.90574, 2.8203)
-color = Color(0.553614, 0.204397, 0.49052, 1)
+color = Color(0.366376, 0.362583, 0.368226, 1)
 
 [node name="IMAGEN" type="TextureRect" parent="FONDO"]
 layout_mode = 0
@@ -66,7 +66,7 @@ offset_top = 481.0
 offset_right = 352.0
 offset_bottom = 543.0
 scale = Vector2(3.27087, 2.8427)
-border_color = Color(0.504193, 0.42471, 1, 1)
+border_color = Color(0.258949, 0.637802, 0.54415, 1)
 
 [node name="TEXTO" type="Label" parent="."]
 offset_left = 200.0

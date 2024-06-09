@@ -1011,7 +1011,7 @@ texture = ExtResource("13_3yxue")
 
 [node name="BrazoSupDer" type="Sprite2D" parent="SkeletonParts"]
 position = Vector2(-3.4994, -8.53181)
-rotation = -0.0374231
+rotation = -0.037423
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("14_i2bec")
 

@@ -1,0 +1,16 @@
+{
+	"personajes": [
+		"Malo1",
+		"Tito"
+	],
+	"dialogos": [
+		{
+			"personaje": "Malo1",
+			"texto": "¿Que crees que estas haciendo, chico?"	
+		},
+		{
+			"personaje": "Tito",
+			"texto": "Solo estoy asegurandome de que la fiesta de esta noche sea inolvidable"	
+		}
+	]
+}
