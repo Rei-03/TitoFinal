@@ -10,7 +10,7 @@ class_name StateMachine
 var states = { }
 var current_state: State
 
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity") * 4
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity") * 6
 
 var properties = {
 	'jump_velocity': -400,

@@ -15,7 +15,7 @@ func on_exit():
 	
 func physics_process(delta):
 	character_body.velocity.x = Input.get_axis('ui_left', 'ui_right') * parent.properties.velocity
-	character_body.velocity.y = min(character_body.velocity.y + parent.properties.gravity * delta, 400)
+	character_body.velocity.y = min(character_body.velocity.y + parent.properties.gravity * delta, 1000)
 	if character_body.velocity.x < 0:
 		parent.skeleton.scale.x = -1
 	elif character_body.velocity.x > 0:

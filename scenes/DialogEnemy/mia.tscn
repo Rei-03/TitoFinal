@@ -1,10 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://ckskrj04j6kkd"]
+[gd_scene load_steps=7 format=3 uid="uid://ckskrj04j6kkd"]
 
 [ext_resource type="Texture2D" uid="uid://crml3t4qyt44u" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_1.png" id="1_o0ehd"]
 [ext_resource type="Texture2D" uid="uid://mogyibg8v6ow" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_2.png" id="2_372ia"]
 [ext_resource type="Texture2D" uid="uid://n74k0h6xihhj" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_3.png" id="3_oi3b3"]
 [ext_resource type="Texture2D" uid="uid://okxer8mwgds4" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_4.png" id="4_qip3l"]
-[ext_resource type="Script" path="res://scenes/DialogEnemy/AreaDialog.gd" id="5_ni2ni"]
+[ext_resource type="PackedScene" uid="uid://bhtnjlladfgra" path="res://scenes/CustonNodes/area_dialog.tscn" id="5_e40wv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tocwi"]
 animations = [{
@@ -26,9 +26,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ysqma"]
-size = Vector2(301, 98)
-
 [node name="Mia" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -38,13 +35,7 @@ scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_tocwi")
 frame_progress = 0.678099
 
-[node name="AreaDialog" type="Area2D" parent="." groups=["DialogArea"]]
-script = ExtResource("5_ni2ni")
-path = "res://Dialogs/Mia.json"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaDialog"]
-position = Vector2(1.5, 39)
-shape = SubResource("RectangleShape2D_ysqma")
+[node name="AreaDialog" parent="." instance=ExtResource("5_e40wv")]
 
 [node name="Label" type="Label" parent="."]
 visible = false

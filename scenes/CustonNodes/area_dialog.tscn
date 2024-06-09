@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhtnjlladfgra"]
+
+[ext_resource type="Script" path="res://scenes/DialogEnemy/AreaDialog.gd" id="1_blpfn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ysqma"]
+size = Vector2(301, 98)
+
+[node name="AreaDialog" type="Area2D" groups=["DialogArea"]]
+script = ExtResource("1_blpfn")
+path = "res://Dialogs/Mia.json"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 39)
+shape = SubResource("RectangleShape2D_ysqma")
