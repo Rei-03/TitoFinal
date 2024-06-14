@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1ekt7hj0ms70"
-path="res://.godot/imported/torsoSup.png-7b12c8606f80a5adb78aeb9097fbbeba.ctex"
+uid="uid://b52bdeo7xqg3b"
+path="res://.godot/imported/pie izquierdo.png-57676cfdd71e9743747e054c9fb86886.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MIA/torsoSup.png"
-dest_files=["res://.godot/imported/torsoSup.png-7b12c8606f80a5adb78aeb9097fbbeba.ctex"]
+source_file="res://assets/MIA/pie izquierdo.png"
+dest_files=["res://.godot/imported/pie izquierdo.png-57676cfdd71e9743747e054c9fb86886.ctex"]
 
 [params]
 

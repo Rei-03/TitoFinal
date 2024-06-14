@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx4x1oje6fbkv"
-path="res://.godot/imported/pieIzq.png-a40ee91a0bafe3ab2ba4cb5adf8ef39e.ctex"
+uid="uid://cgw7y851b4aau"
+path="res://.godot/imported/mano derehca.png-b864ac7b43daecdc55ea2386c8911b8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MIA/pieIzq.png"
-dest_files=["res://.godot/imported/pieIzq.png-a40ee91a0bafe3ab2ba4cb5adf8ef39e.ctex"]
+source_file="res://assets/MIA/mano derehca.png"
+dest_files=["res://.godot/imported/mano derehca.png-b864ac7b43daecdc55ea2386c8911b8d.ctex"]
 
 [params]
 

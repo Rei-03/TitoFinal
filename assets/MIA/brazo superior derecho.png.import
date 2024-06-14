@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://odlqaq773knp"
-path="res://.godot/imported/antebrazoIzq.png-1c748ecc38e8779589c829485cefbc5d.ctex"
+uid="uid://khwi2pgxk14v"
+path="res://.godot/imported/brazo superior derecho.png-8b2f01ad71e7c65a97ea992a12964566.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MIA/antebrazoIzq.png"
-dest_files=["res://.godot/imported/antebrazoIzq.png-1c748ecc38e8779589c829485cefbc5d.ctex"]
+source_file="res://assets/MIA/brazo superior derecho.png"
+dest_files=["res://.godot/imported/brazo superior derecho.png-8b2f01ad71e7c65a97ea992a12964566.ctex"]
 
 [params]
 

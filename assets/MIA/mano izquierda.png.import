@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crkw1lthbusd6"
-path="res://.godot/imported/brazoSupDer.png-e85fffd8d0ae9972023641c0ae562408.ctex"
+uid="uid://b72fkt623vloo"
+path="res://.godot/imported/mano izquierda.png-1e3e98c8c8fbd05ad3d262062236f4e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MIA/brazoSupDer.png"
-dest_files=["res://.godot/imported/brazoSupDer.png-e85fffd8d0ae9972023641c0ae562408.ctex"]
+source_file="res://assets/MIA/mano izquierda.png"
+dest_files=["res://.godot/imported/mano izquierda.png-1e3e98c8c8fbd05ad3d262062236f4e6.ctex"]
 
 [params]
 

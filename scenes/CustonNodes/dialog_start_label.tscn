@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://r2qm13imn07n"]
+
+[node name="DialogStartLabel" type="Label"]
+visible = false
+offset_left = -53.0
+offset_top = -115.0
+offset_right = 44.0
+offset_bottom = -79.0
+text = "Hablar"
+horizontal_alignment = 1
+vertical_alignment = 1

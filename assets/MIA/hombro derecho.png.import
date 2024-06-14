@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs2es5snbfnj7"
-path="res://.godot/imported/hombroIzq.png-ce350a8f708872d5930ff1fa1068a10d.ctex"
+uid="uid://b1i74xpibg20i"
+path="res://.godot/imported/hombro derecho.png-c2597fbc3766a296610eff1ce9fbbcb6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MIA/hombroIzq.png"
-dest_files=["res://.godot/imported/hombroIzq.png-ce350a8f708872d5930ff1fa1068a10d.ctex"]
+source_file="res://assets/MIA/hombro derecho.png"
+dest_files=["res://.godot/imported/hombro derecho.png-c2597fbc3766a296610eff1ce9fbbcb6.ctex"]
 
 [params]
 

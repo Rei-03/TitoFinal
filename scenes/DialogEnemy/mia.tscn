@@ -1,48 +1,109 @@
-[gd_scene load_steps=7 format=3 uid="uid://ckskrj04j6kkd"]
+[gd_scene load_steps=22 format=3 uid="uid://ckskrj04j6kkd"]
 
-[ext_resource type="Texture2D" uid="uid://crml3t4qyt44u" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_1.png" id="1_o0ehd"]
-[ext_resource type="Texture2D" uid="uid://mogyibg8v6ow" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_2.png" id="2_372ia"]
-[ext_resource type="Texture2D" uid="uid://n74k0h6xihhj" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_3.png" id="3_oi3b3"]
-[ext_resource type="Texture2D" uid="uid://okxer8mwgds4" path="res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_4.png" id="4_qip3l"]
+[ext_resource type="Texture2D" uid="uid://dh557yu72big0" path="res://assets/MIA/cuello.png" id="3_31c08"]
+[ext_resource type="Texture2D" uid="uid://ccqm5qk8ypyv3" path="res://assets/MIA/cabeza.png" id="4_knh4m"]
+[ext_resource type="Texture2D" uid="uid://cgw7y851b4aau" path="res://assets/MIA/mano derehca.png" id="5_7rrj4"]
 [ext_resource type="PackedScene" uid="uid://bhtnjlladfgra" path="res://scenes/CustonNodes/area_dialog.tscn" id="5_e40wv"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_tocwi"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_o0ehd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_372ia")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_oi3b3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_qip3l")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="Texture2D" uid="uid://b1i74xpibg20i" path="res://assets/MIA/hombro derecho.png" id="6_tjpkr"]
+[ext_resource type="PackedScene" uid="uid://r2qm13imn07n" path="res://scenes/CustonNodes/dialog_start_label.tscn" id="6_x67t5"]
+[ext_resource type="Texture2D" uid="uid://c5wts7wr43g86" path="res://assets/MIA/pierna superior derecha.png" id="7_rqlhu"]
+[ext_resource type="Texture2D" uid="uid://bjldckhbb8bcm" path="res://assets/MIA/pantorilla derecha.png" id="8_2324x"]
+[ext_resource type="Texture2D" uid="uid://d2xbamgy6mtkt" path="res://assets/MIA/cola.png" id="9_yl4vc"]
+[ext_resource type="Texture2D" uid="uid://mfrlvx5wqmry" path="res://assets/MIA/torso superior.png" id="10_x8y5q"]
+[ext_resource type="Texture2D" uid="uid://cly0l7h5rs6ou" path="res://assets/MIA/torso inferior.png" id="11_ouaiu"]
+[ext_resource type="Texture2D" uid="uid://t4a304yeefat" path="res://assets/MIA/pierna superior izquierda.png" id="12_rq404"]
+[ext_resource type="Texture2D" uid="uid://t8wml2o7j741" path="res://assets/MIA/pantorrilla izquierda.png" id="13_icjcr"]
+[ext_resource type="Texture2D" uid="uid://cb4v4hf6hb84i" path="res://assets/MIA/pie derecho.png" id="14_wvnnp"]
+[ext_resource type="Texture2D" uid="uid://b52bdeo7xqg3b" path="res://assets/MIA/pie izquierdo.png" id="15_otnxp"]
+[ext_resource type="Texture2D" uid="uid://cfmswods40qo3" path="res://assets/MIA/hombro izquierdo.png" id="16_0jsdb"]
+[ext_resource type="Texture2D" uid="uid://khwi2pgxk14v" path="res://assets/MIA/brazo superior derecho.png" id="17_idbhm"]
+[ext_resource type="Texture2D" uid="uid://c4hyd0qcaas3x" path="res://assets/MIA/brazo superior izquierdo.png" id="18_iuydl"]
+[ext_resource type="Texture2D" uid="uid://dl8nw0uwptujl" path="res://assets/MIA/antebrazo izquierdo.png" id="19_rfqpx"]
+[ext_resource type="Texture2D" uid="uid://dtk4b5ahemksu" path="res://assets/MIA/antebrazo derecho.png" id="20_72uw6"]
+[ext_resource type="Texture2D" uid="uid://b72fkt623vloo" path="res://assets/MIA/mano izquierda.png" id="21_nysvy"]
 
 [node name="Mia" type="Node2D"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
-position = Vector2(33, 1)
-scale = Vector2(4, 4)
-sprite_frames = SubResource("SpriteFrames_tocwi")
-frame_progress = 0.678099
-
 [node name="AreaDialog" parent="." instance=ExtResource("5_e40wv")]
 
-[node name="Label" type="Label" parent="."]
-visible = false
-offset_left = -53.0
-offset_top = -115.0
-offset_right = 44.0
-offset_bottom = -79.0
-text = "Hablar"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="DialogStartLabel" parent="." instance=ExtResource("6_x67t5")]
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+
+[node name="Sprites" type="Node2D" parent="."]
+
+[node name="Cuello" type="Sprite2D" parent="Sprites"]
+position = Vector2(-26, -323)
+texture = ExtResource("3_31c08")
+
+[node name="Cabeza" type="Sprite2D" parent="Sprites"]
+position = Vector2(-13, -390)
+texture = ExtResource("4_knh4m")
+
+[node name="ManoDerehca" type="Sprite2D" parent="Sprites"]
+position = Vector2(17, -158)
+texture = ExtResource("5_7rrj4")
+
+[node name="HombroDerecho" type="Sprite2D" parent="Sprites"]
+position = Vector2(1, -307)
+texture = ExtResource("6_tjpkr")
+
+[node name="PiernaSuperiorDerecha" type="Sprite2D" parent="Sprites"]
+position = Vector2(-11, -147)
+texture = ExtResource("7_rqlhu")
+
+[node name="PantorillaDerecha" type="Sprite2D" parent="Sprites"]
+position = Vector2(-19, -32)
+texture = ExtResource("8_2324x")
+
+[node name="Cola" type="Sprite2D" parent="Sprites"]
+position = Vector2(-80, -119)
+texture = ExtResource("9_yl4vc")
+
+[node name="TorsoSuperior" type="Sprite2D" parent="Sprites"]
+position = Vector2(-18, -275)
+texture = ExtResource("10_x8y5q")
+
+[node name="TorsoInferior" type="Sprite2D" parent="Sprites"]
+position = Vector2(-27, -208)
+texture = ExtResource("11_ouaiu")
+
+[node name="PiernaSuperiorIzquierda" type="Sprite2D" parent="Sprites"]
+position = Vector2(-35, -144)
+texture = ExtResource("12_rq404")
+
+[node name="PantorrillaIzquierda" type="Sprite2D" parent="Sprites"]
+position = Vector2(-44, -31)
+texture = ExtResource("13_icjcr")
+
+[node name="PieDerecho" type="Sprite2D" parent="Sprites"]
+position = Vector2(-8, 56)
+texture = ExtResource("14_wvnnp")
+
+[node name="PieIzquierdo" type="Sprite2D" parent="Sprites"]
+position = Vector2(-20, 59)
+texture = ExtResource("15_otnxp")
+
+[node name="HombroIzquierdo" type="Sprite2D" parent="Sprites"]
+position = Vector2(-44, -302)
+texture = ExtResource("16_0jsdb")
+
+[node name="BrazoSuperiorDerecho" type="Sprite2D" parent="Sprites"]
+position = Vector2(4, -271)
+texture = ExtResource("17_idbhm")
+
+[node name="BrazoSuperiorIzquierdo" type="Sprite2D" parent="Sprites"]
+position = Vector2(-45, -271)
+texture = ExtResource("18_iuydl")
+
+[node name="AntebrazoIzquierdo" type="Sprite2D" parent="Sprites"]
+position = Vector2(-46, -209)
+texture = ExtResource("19_rfqpx")
+
+[node name="AntebrazoDerecho" type="Sprite2D" parent="Sprites"]
+position = Vector2(12, -208)
+texture = ExtResource("20_72uw6")
+
+[node name="ManoIzquierda" type="Sprite2D" parent="Sprites"]
+position = Vector2(-45, -157)
+texture = ExtResource("21_nysvy")

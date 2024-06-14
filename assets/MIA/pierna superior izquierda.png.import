@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqape12xhvgsc"
-path="res://.godot/imported/piernaSupIzq.png-d53f2560873ea4a870e9863d8ad8f899.ctex"
+uid="uid://t4a304yeefat"
+path="res://.godot/imported/pierna superior izquierda.png-93fffbf9bba871fb4f6b37cfa7e9bcff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MIA/piernaSupIzq.png"
-dest_files=["res://.godot/imported/piernaSupIzq.png-d53f2560873ea4a870e9863d8ad8f899.ctex"]
+source_file="res://assets/MIA/pierna superior izquierda.png"
+dest_files=["res://.godot/imported/pierna superior izquierda.png-93fffbf9bba871fb4f6b37cfa7e9bcff.ctex"]
 
 [params]
 

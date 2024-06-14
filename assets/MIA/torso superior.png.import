@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dudbk61skpc53"
-path="res://.godot/imported/pantorrillaIzq.png-064c953493e53144f0645439c205c965.ctex"
+uid="uid://mfrlvx5wqmry"
+path="res://.godot/imported/torso superior.png-abf2926a4e67adb1cdf5771e38274d8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MIA/pantorrillaIzq.png"
-dest_files=["res://.godot/imported/pantorrillaIzq.png-064c953493e53144f0645439c205c965.ctex"]
+source_file="res://assets/MIA/torso superior.png"
+dest_files=["res://.godot/imported/torso superior.png-abf2926a4e67adb1cdf5771e38274d8b.ctex"]
 
 [params]
 

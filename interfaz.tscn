@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bthh4agdqbi5x"]
 
 [ext_resource type="Script" path="res://interfaz.gd" id="1_2drki"]
-[ext_resource type="Texture2D" uid="uid://buivk261wepyg" path="res://icon.svg" id="1_xut0p"]
+[ext_resource type="Texture2D" uid="uid://bre4gwc7nnbtc" path="res://icon.svg" id="1_xut0p"]
 
 [sub_resource type="Animation" id="Animation_2k1xi"]
 tracks/0/type = "value"

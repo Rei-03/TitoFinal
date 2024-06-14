@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv078nafk788l"
-path="res://.godot/imported/pieDer.png-0356574c4c7edd36c637c474209b7ae1.ctex"
+uid="uid://c4hyd0qcaas3x"
+path="res://.godot/imported/brazo superior izquierdo.png-9b1a57aa8b8ae59582145c4e2a23f713.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MIA/pieDer.png"
-dest_files=["res://.godot/imported/pieDer.png-0356574c4c7edd36c637c474209b7ae1.ctex"]
+source_file="res://assets/MIA/brazo superior izquierdo.png"
+dest_files=["res://.godot/imported/brazo superior izquierdo.png-9b1a57aa8b8ae59582145c4e2a23f713.ctex"]
 
 [params]
 

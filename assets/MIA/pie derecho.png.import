@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db4clfxh6et07"
-path="res://.godot/imported/manoDer.png-acd1e17e3ccc59602f35c7cf9a376f73.ctex"
+uid="uid://cb4v4hf6hb84i"
+path="res://.godot/imported/pie derecho.png-dd3388bd4035806214cdcea6d0454b5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MIA/manoDer.png"
-dest_files=["res://.godot/imported/manoDer.png-acd1e17e3ccc59602f35c7cf9a376f73.ctex"]
+source_file="res://assets/MIA/pie derecho.png"
+dest_files=["res://.godot/imported/pie derecho.png-dd3388bd4035806214cdcea6d0454b5c.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnhtlvjoiqnbt"
-path="res://.godot/imported/anteBrazoDer.png-9a5260a2c36dd582b9c39029825d7982.ctex"
+uid="uid://bjldckhbb8bcm"
+path="res://.godot/imported/pantorilla derecha.png-8c421e0f0f73c25b95c96b5e01d67459.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MIA/anteBrazoDer.png"
-dest_files=["res://.godot/imported/anteBrazoDer.png-9a5260a2c36dd582b9c39029825d7982.ctex"]
+source_file="res://assets/MIA/pantorilla derecha.png"
+dest_files=["res://.godot/imported/pantorilla derecha.png-8c421e0f0f73c25b95c96b5e01d67459.ctex"]
 
 [params]
 

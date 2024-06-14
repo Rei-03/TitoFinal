@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpt0ybosubb34"
-path="res://.godot/imported/piernaSupDer.png-8e51457eb0da15a5f5132b2b348f78a8.ctex"
+uid="uid://t8wml2o7j741"
+path="res://.godot/imported/pantorrilla izquierda.png-86cb26fdb048bb9c1b6096e74ac408e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MIA/piernaSupDer.png"
-dest_files=["res://.godot/imported/piernaSupDer.png-8e51457eb0da15a5f5132b2b348f78a8.ctex"]
+source_file="res://assets/MIA/pantorrilla izquierda.png"
+dest_files=["res://.godot/imported/pantorrilla izquierda.png-86cb26fdb048bb9c1b6096e74ac408e4.ctex"]
 
 [params]
 
