@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bcqfrjbc4qn67"]
+[gd_scene load_steps=5 format=3 uid="uid://bcqfrjbc4qn67"]
 
 [ext_resource type="PackedScene" uid="uid://bma3byfkqry68" path="res://scenes/player/Tito.tscn" id="1_6whkw"]
 [ext_resource type="PackedScene" uid="uid://bthh4agdqbi5x" path="res://interfaz.tscn" id="1_vfhh8"]
 [ext_resource type="Script" path="res://scenes/views/ScenesManager.gd" id="2_caeun"]
+[ext_resource type="PackedScene" uid="uid://ckskrj04j6kkd" path="res://scenes/DialogEnemy/mia.tscn" id="6_lwwp0"]
 
 [node name="Root" type="Node2D"]
 
@@ -11,7 +12,9 @@ visible = false
 
 [node name="ScenesManager" type="Node2D" parent="."]
 script = ExtResource("2_caeun")
-default_scene = "1"
 
 [node name="Tito" parent="." instance=ExtResource("1_6whkw")]
 position = Vector2(92, 114)
+
+[node name="Mia" parent="." groups=["PERSONAJES"] instance=ExtResource("6_lwwp0")]
+position = Vector2(565, 215)
