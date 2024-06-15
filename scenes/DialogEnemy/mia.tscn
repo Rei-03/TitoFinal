@@ -740,7 +740,7 @@ scale = Vector2(0.3, 0.3)
 texture = ExtResource("13_icjcr")
 
 [node name="PieDerecho" type="Sprite2D" parent="Sprites"]
-position = Vector2(9.5037, -6.22129)
+position = Vector2(9.50369, -6.22129)
 rotation = 0.0598554
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("14_wvnnp")
