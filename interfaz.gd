@@ -27,8 +27,8 @@ const IMAGENES : Dictionary = {
 	'Carbon'  :   preload ("res://icon.svg"),
 	'Mia'     :   preload ("res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_1.png"),
 	'Baron'   :   preload ("res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png"),
-	'Maton1'  :   preload ("res://assets/Light Bandit/Idle/LightBandit_Idle_0.png"),
-	'Maton2'  :   preload ("res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_0.png"),
+	'Malo1'  :   preload ("res://assets/Light Bandit/Idle/LightBandit_Idle_0.png"),
+	'Malo2'  :   preload ("res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_0.png"),
 }
 
 

@@ -1,9 +1,9 @@
 extends Area2D
 
 @export var path: String
+@export var label:Label
 
-signal start_dialog(path)
-@onready var label:Label = get_node("../DialogStartLabel")
+signal start_dialog(path) 
 var on_area:bool
 
 # Called when the node enters the scene tree for the first time.

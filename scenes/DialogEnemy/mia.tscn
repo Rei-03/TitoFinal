@@ -1,11 +1,11 @@
-[gd_scene load_steps=22 format=3 uid="uid://ckskrj04j6kkd"]
+[gd_scene load_steps=26 format=3 uid="uid://ckskrj04j6kkd"]
 
+[ext_resource type="PackedScene" uid="uid://bhtnjlladfgra" path="res://scenes/CustonNodes/area_dialog.tscn" id="1_ydmcv"]
+[ext_resource type="PackedScene" uid="uid://r2qm13imn07n" path="res://scenes/CustonNodes/dialog_start_label.tscn" id="2_hjvst"]
 [ext_resource type="Texture2D" uid="uid://dh557yu72big0" path="res://assets/MIA/cuello.png" id="3_31c08"]
 [ext_resource type="Texture2D" uid="uid://ccqm5qk8ypyv3" path="res://assets/MIA/cabeza.png" id="4_knh4m"]
 [ext_resource type="Texture2D" uid="uid://cgw7y851b4aau" path="res://assets/MIA/mano derehca.png" id="5_7rrj4"]
-[ext_resource type="PackedScene" uid="uid://bhtnjlladfgra" path="res://scenes/CustonNodes/area_dialog.tscn" id="5_e40wv"]
 [ext_resource type="Texture2D" uid="uid://b1i74xpibg20i" path="res://assets/MIA/hombro derecho.png" id="6_tjpkr"]
-[ext_resource type="PackedScene" uid="uid://r2qm13imn07n" path="res://scenes/CustonNodes/dialog_start_label.tscn" id="6_x67t5"]
 [ext_resource type="Texture2D" uid="uid://c5wts7wr43g86" path="res://assets/MIA/pierna superior derecha.png" id="7_rqlhu"]
 [ext_resource type="Texture2D" uid="uid://bjldckhbb8bcm" path="res://assets/MIA/pantorilla derecha.png" id="8_2324x"]
 [ext_resource type="Texture2D" uid="uid://d2xbamgy6mtkt" path="res://assets/MIA/cola.png" id="9_yl4vc"]
@@ -22,88 +22,920 @@
 [ext_resource type="Texture2D" uid="uid://dtk4b5ahemksu" path="res://assets/MIA/antebrazo derecho.png" id="20_72uw6"]
 [ext_resource type="Texture2D" uid="uid://b72fkt623vloo" path="res://assets/MIA/mano izquierda.png" id="21_nysvy"]
 
+[sub_resource type="Animation" id="Animation_acpes"]
+resource_name = "Idle"
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/Base/PiernaDer:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.175687, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/Base/PiernaIzq:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.0527123, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/Base/PiernaDer/PantorrillaDer:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.132518, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/Base/PiernaIzq/PantorrillaIzq:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/Base/PiernaIzq/PantorrillaIzq/PieIzq:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.0590493, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/Base/PiernaDer/PantorrillaDer/PieDer:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.084635, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Skeleton2D/Base:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Skeleton2D/Base:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-228, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Skeleton2D/Base/Cola:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0368487]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -49), Vector2(0, -45), Vector2(0, -49)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq/AntebrazoIzq:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq/AntebrazoIzq/ManoIzq:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer/AntebrazoDer/ManoDer:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer/AntebrazoDer:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer:rotation")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/Cuello:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/Cuello/Cabeza:rotation")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.0415476, -0.0415476]
+}
+
+[sub_resource type="Animation" id="Animation_kbf3q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/Base/Cola:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0368487]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -49)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq/AntebrazoIzq:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq/AntebrazoIzq/ManoIzq:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer/AntebrazoDer/ManoDer:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer/AntebrazoDer:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/Cuello:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/Cuello/Cabeza:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.164185]
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Skeleton2D/Base/PiernaDer:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.169814, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Skeleton2D/Base/PiernaDer/PantorrillaDer:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.132518, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Skeleton2D/Base/PiernaDer/PantorrillaDer/PieDer:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.0971514, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Skeleton2D/Base/PiernaIzq:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.0527123, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Skeleton2D/Base/PiernaIzq/PantorrillaIzq/PieIzq:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.0590493, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_gbu0q"]
+resource_name = "Run"
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/Base/PiernaDer:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.175687, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/Base/PiernaIzq:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.0527123, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/Base/PiernaDer/PantorrillaDer:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.132518, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/Base/PiernaIzq/PantorrillaIzq:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/Base/PiernaIzq/PantorrillaIzq/PieIzq:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.0590493, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/Base/PiernaDer/PantorrillaDer/PieDer:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.084635, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Skeleton2D/Base:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Skeleton2D/Base:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-228, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Skeleton2D/Base/Cola:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0368487]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -49)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq/AntebrazoIzq:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq/AntebrazoIzq/ManoIzq:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer/AntebrazoDer/ManoDer:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer/AntebrazoDer:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer:rotation")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/Cuello:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Skeleton2D/Base/TorsoInferior/TorsoSuperior/Cuello/Cabeza:rotation")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.0415476, -0.0415476]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w04wp"]
+_data = {
+"Idle": SubResource("Animation_acpes"),
+"RESET": SubResource("Animation_kbf3q"),
+"Run": SubResource("Animation_gbu0q")
+}
+
 [node name="Mia" type="Node2D"]
 
-[node name="AreaDialog" parent="." instance=ExtResource("5_e40wv")]
+[node name="AreaDialog" parent="." node_paths=PackedStringArray("label") instance=ExtResource("1_ydmcv")]
+position = Vector2(5, -87)
+label = NodePath("../DialogStartLabel")
 
-[node name="DialogStartLabel" parent="." instance=ExtResource("6_x67t5")]
-
-[node name="Skeleton2D" type="Skeleton2D" parent="."]
+[node name="DialogStartLabel" parent="." instance=ExtResource("2_hjvst")]
 
 [node name="Sprites" type="Node2D" parent="."]
 
 [node name="Cuello" type="Sprite2D" parent="Sprites"]
-position = Vector2(-26, -323)
+position = Vector2(-2.1, -121.5)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_31c08")
 
-[node name="Cabeza" type="Sprite2D" parent="Sprites"]
-position = Vector2(-13, -390)
-texture = ExtResource("4_knh4m")
-
 [node name="ManoDerehca" type="Sprite2D" parent="Sprites"]
-position = Vector2(17, -158)
+position = Vector2(9.9, -72)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("5_7rrj4")
 
+[node name="BrazoSuperiorDerecho" type="Sprite2D" parent="Sprites"]
+position = Vector2(6.6, -106.8)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("17_idbhm")
+
+[node name="AntebrazoDerecho" type="Sprite2D" parent="Sprites"]
+position = Vector2(9, -86.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("20_72uw6")
+
 [node name="HombroDerecho" type="Sprite2D" parent="Sprites"]
-position = Vector2(1, -307)
+position = Vector2(6.3, -116.7)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("6_tjpkr")
 
 [node name="PiernaSuperiorDerecha" type="Sprite2D" parent="Sprites"]
-position = Vector2(-11, -147)
+position = Vector2(4.84677, -69.5018)
+rotation = -0.169814
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("7_rqlhu")
 
 [node name="PantorillaDerecha" type="Sprite2D" parent="Sprites"]
-position = Vector2(-19, -32)
+position = Vector2(5.16616, -34.2036)
+rotation = -0.037296
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("8_2324x")
 
 [node name="Cola" type="Sprite2D" parent="Sprites"]
-position = Vector2(-80, -119)
+position = Vector2(-16.6702, -52.3192)
+rotation = 0.0368487
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("9_yl4vc")
 
 [node name="TorsoSuperior" type="Sprite2D" parent="Sprites"]
-position = Vector2(-18, -275)
+position = Vector2(0.6, -108)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("10_x8y5q")
 
 [node name="TorsoInferior" type="Sprite2D" parent="Sprites"]
-position = Vector2(-27, -208)
+position = Vector2(-2.4, -87.3)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("11_ouaiu")
 
 [node name="PiernaSuperiorIzquierda" type="Sprite2D" parent="Sprites"]
-position = Vector2(-35, -144)
+position = Vector2(-5.98525, -69.2996)
+rotation = 0.0527123
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("12_rq404")
 
 [node name="PantorrillaIzquierda" type="Sprite2D" parent="Sprites"]
-position = Vector2(-44, -31)
+position = Vector2(-9.60048, -34.9424)
+rotation = 0.0527123
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("13_icjcr")
 
 [node name="PieDerecho" type="Sprite2D" parent="Sprites"]
-position = Vector2(-8, 56)
+position = Vector2(9.5037, -6.22129)
+rotation = 0.0598554
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("14_wvnnp")
 
 [node name="PieIzquierdo" type="Sprite2D" parent="Sprites"]
-position = Vector2(-20, 59)
+position = Vector2(-3.78187, -7.0804)
+rotation = -0.006337
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("15_otnxp")
 
 [node name="HombroIzquierdo" type="Sprite2D" parent="Sprites"]
-position = Vector2(-44, -302)
+position = Vector2(-7.8, -117)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("16_0jsdb")
 
-[node name="BrazoSuperiorDerecho" type="Sprite2D" parent="Sprites"]
-position = Vector2(4, -271)
-texture = ExtResource("17_idbhm")
+[node name="Cabeza" type="Sprite2D" parent="Sprites"]
+position = Vector2(-3.61303, -142.474)
+rotation = -0.164185
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_knh4m")
 
 [node name="BrazoSuperiorIzquierdo" type="Sprite2D" parent="Sprites"]
-position = Vector2(-45, -271)
+position = Vector2(-8.4, -107.4)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("18_iuydl")
 
 [node name="AntebrazoIzquierdo" type="Sprite2D" parent="Sprites"]
-position = Vector2(-46, -209)
+position = Vector2(-9, -89.1)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("19_rfqpx")
 
-[node name="AntebrazoDerecho" type="Sprite2D" parent="Sprites"]
-position = Vector2(12, -208)
-texture = ExtResource("20_72uw6")
-
 [node name="ManoIzquierda" type="Sprite2D" parent="Sprites"]
-position = Vector2(-45, -157)
+position = Vector2(-8.4, -73.8)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("21_nysvy")
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+scale = Vector2(0.3, 0.3)
+
+[node name="Base" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(-1, -228)
+rest = Transform2D(1, 0, 0, 1, -1, -228)
+
+[node name="TorsoInferior" type="Bone2D" parent="Skeleton2D/Base"]
+position = Vector2(0, -43)
+rest = Transform2D(1, 0, 0, 1, 0, -43)
+
+[node name="TorsoSuperior" type="Bone2D" parent="Skeleton2D/Base/TorsoInferior"]
+position = Vector2(0, -49)
+rest = Transform2D(1, 0, 0, 1, 0, -49)
+
+[node name="HombreIzq" type="Bone2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior"]
+position = Vector2(-25, -70)
+rest = Transform2D(1, 0, 0, 1, -25, -70)
+
+[node name="AntebrazoIzq" type="Bone2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq"]
+position = Vector2(-3, 64)
+rest = Transform2D(1, 0, 0, 1, -3, 64)
+
+[node name="ManoIzq" type="Bone2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq/AntebrazoIzq"]
+position = Vector2(-2, 60)
+rest = Transform2D(1, 0, 0, 1, -2, 60)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq/AntebrazoIzq/ManoIzq"]
+position = Vector2(3, 20)
+remote_path = NodePath("../../../../../../../../Sprites/ManoIzquierda")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq/AntebrazoIzq"]
+position = Vector2(-1, 29)
+remote_path = NodePath("../../../../../../../Sprites/AntebrazoIzquierdo")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq"]
+remote_path = NodePath("../../../../../../Sprites/HombroIzquierdo")
+
+[node name="RemoteTransform2D2" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombreIzq"]
+position = Vector2(-2, 32)
+remote_path = NodePath("../../../../../../Sprites/BrazoSuperiorIzquierdo")
+
+[node name="HombroDer" type="Bone2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior"]
+position = Vector2(22, -69)
+rest = Transform2D(1, 0, 0, 1, 22, -69)
+
+[node name="AntebrazoDer" type="Bone2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer"]
+position = Vector2(5, 67)
+rest = Transform2D(1, 0, 0, 1, 5, 67)
+
+[node name="ManoDer" type="Bone2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer/AntebrazoDer"]
+position = Vector2(6, 70)
+rest = Transform2D(1, 0, 0, 1, 6, 70)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer/AntebrazoDer/ManoDer"]
+position = Vector2(1, 12)
+remote_path = NodePath("../../../../../../../../Sprites/ManoDerehca")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer/AntebrazoDer"]
+position = Vector2(4, 35)
+remote_path = NodePath("../../../../../../../Sprites/AntebrazoDerecho")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer"]
+remote_path = NodePath("../../../../../../Sprites/HombroDerecho")
+
+[node name="RemoteTransform2D2" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/HombroDer"]
+position = Vector2(1, 33)
+remote_path = NodePath("../../../../../../Sprites/BrazoSuperiorDerecho")
+
+[node name="Cuello" type="Bone2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior"]
+position = Vector2(-6, -79)
+rest = Transform2D(1, 0, 0, 1, -6, -79)
+
+[node name="Cabeza" type="Bone2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/Cuello"]
+position = Vector2(0, -21)
+rotation = -0.164185
+scale = Vector2(0.999999, 0.999999)
+rest = Transform2D(0.986552, -0.163448, 0.163448, 0.986552, 0, -21)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/Cuello/Cabeza"]
+position = Vector2(4, -55)
+remote_path = NodePath("../../../../../../../Sprites/Cabeza")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior/Cuello"]
+position = Vector2(0, -6)
+remote_path = NodePath("../../../../../../Sprites/Cuello")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior/TorsoSuperior"]
+position = Vector2(3, -40)
+remote_path = NodePath("../../../../../Sprites/TorsoSuperior")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/TorsoInferior"]
+position = Vector2(-7, -20)
+remote_path = NodePath("../../../../Sprites/TorsoInferior")
+
+[node name="PiernaIzq" type="Bone2D" parent="Skeleton2D/Base"]
+position = Vector2(-18, -40)
+rotation = 0.0527123
+rest = Transform2D(1, 0, 0, 1, -18, -40)
+
+[node name="PantorrillaIzq" type="Bone2D" parent="Skeleton2D/Base/PiernaIzq"]
+position = Vector2(2, 84)
+rest = Transform2D(1, 0, 0, 1, 2, 84)
+
+[node name="PieIzq" type="Bone2D" parent="Skeleton2D/Base/PiernaIzq/PantorrillaIzq"]
+position = Vector2(-5, 139)
+rotation = -0.0590493
+rest = Transform2D(1, 0, 0, 1, -5, 139)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/PiernaIzq/PantorrillaIzq/PieIzq"]
+position = Vector2(21, 22)
+remote_path = NodePath("../../../../../../Sprites/PieIzquierdo")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/PiernaIzq/PantorrillaIzq"]
+position = Vector2(-7, 68)
+remote_path = NodePath("../../../../../Sprites/PantorrillaIzquierda")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/PiernaIzq"]
+position = Vector2(1, 37)
+remote_path = NodePath("../../../../Sprites/PiernaSuperiorIzquierda")
+
+[node name="PiernaDer" type="Bone2D" parent="Skeleton2D/Base"]
+position = Vector2(16, -40)
+rotation = -0.169814
+rest = Transform2D(1, 0, 0, 1, 16, -40)
+
+[node name="PantorrillaDer" type="Bone2D" parent="Skeleton2D/Base/PiernaDer"]
+position = Vector2(-13, 86)
+rotation = 0.132518
+rest = Transform2D(1, 0, 0, 1, -13, 86)
+
+[node name="PieDer" type="Bone2D" parent="Skeleton2D/Base/PiernaDer/PantorrillaDer"]
+position = Vector2(-8, 139)
+rotation = 0.0971514
+scale = Vector2(0.999999, 0.999999)
+rest = Transform2D(1, 0, 0, 1, -8, 139)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/PiernaDer/PantorrillaDer/PieDer"]
+position = Vector2(19, 20)
+remote_path = NodePath("../../../../../../Sprites/PieDerecho")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/PiernaDer/PantorrillaDer"]
+position = Vector2(-2, 67)
+remote_path = NodePath("../../../../../Sprites/PantorillaDerecha")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/PiernaDer"]
+position = Vector2(-5, 36)
+remote_path = NodePath("../../../../Sprites/PiernaSuperiorDerecha")
+
+[node name="Cola" type="Bone2D" parent="Skeleton2D/Base"]
+position = Vector2(-42, -43)
+rotation = 0.0368487
+rest = Transform2D(0.999321, 0.0368404, -0.0368404, 0.999321, -42, -43)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/Cola"]
+position = Vector2(-9, 97)
+remote_path = NodePath("../../../../Sprites/Cola")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_w04wp")
+}

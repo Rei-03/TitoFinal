@@ -3,12 +3,14 @@
 [ext_resource type="Script" path="res://scenes/DialogEnemy/AreaDialog.gd" id="1_blpfn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ysqma"]
-size = Vector2(301, 98)
+size = Vector2(273, 100)
 
-[node name="AreaDialog" type="Area2D" groups=["DialogArea"]]
+[node name="AreaDialog" type="Area2D" node_paths=PackedStringArray("label") groups=["DialogArea"]]
+position = Vector2(-1, -88)
 script = ExtResource("1_blpfn")
 path = "res://Dialogs/Mia.json"
+label = NodePath("")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.5, 39)
+position = Vector2(0.5, 38)
 shape = SubResource("RectangleShape2D_ysqma")

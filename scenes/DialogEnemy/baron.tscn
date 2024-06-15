@@ -1,13 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bfsvox1jjg760"]
+[gd_scene load_steps=7 format=3 uid="uid://bfsvox1jjg760"]
 
 [ext_resource type="Texture2D" uid="uid://dcw8jjujhgvni" path="res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png" id="1_8vd33"]
 [ext_resource type="PackedScene" uid="uid://bhtnjlladfgra" path="res://scenes/CustonNodes/area_dialog.tscn" id="1_lwoor"]
 [ext_resource type="Texture2D" uid="uid://qcxootjad8pd" path="res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_2.png" id="2_3d106"]
 [ext_resource type="Texture2D" uid="uid://sx2hqfluf6ot" path="res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_3.png" id="3_c120d"]
 [ext_resource type="Texture2D" uid="uid://diwvkcfpfa0ne" path="res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_4.png" id="4_7siu0"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4dtd"]
-size = Vector2(315, 150)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tocwi"]
 animations = [{
@@ -29,22 +26,20 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Baron" type="Area2D"]
+[node name="Baron" type="Node2D"]
 
-[node name="AreaDialog" parent="." instance=ExtResource("1_lwoor")]
+[node name="AreaDialog" parent="." node_paths=PackedStringArray("label") instance=ExtResource("1_lwoor")]
 path = "res://Dialogs/Baron.json"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(136.5, 73)
-shape = SubResource("RectangleShape2D_a4dtd")
+label = NodePath("../DialogStartLabel")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(5, -34)
+position = Vector2(-149, -96)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_tocwi")
 frame_progress = 0.0199141
 
-[node name="Label" type="Label" parent="."]
+[node name="DialogStartLabel" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
+text = "Hablar"
