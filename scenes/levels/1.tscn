@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dywgqwthecllr"]
+[gd_scene load_steps=6 format=3 uid="uid://dywgqwthecllr"]
 
 [ext_resource type="TileSet" uid="uid://bkl4sx35i5cv6" path="res://TileSets/forest.tres" id="1_40aks"]
 [ext_resource type="Script" path="res://scenes/levels/Scene.gd" id="2_qx51a"]
 [ext_resource type="PackedScene" uid="uid://wtahwnwm8kj1" path="res://scenes/CustonNodes/exit_escene_area.tscn" id="3_m4d40"]
 [ext_resource type="PackedScene" uid="uid://b7bx2lticad5l" path="res://scenes/CustonNodes/spawn_area.tscn" id="3_yhrwn"]
+[ext_resource type="PackedScene" uid="uid://ckskrj04j6kkd" path="res://scenes/DialogEnemy/mia.tscn" id="5_j0wtg"]
 
 [node name="TileMap" type="TileMap"]
 position = Vector2(-196, 435)
@@ -19,3 +20,6 @@ go_to = "2"
 [node name="SpawnArea" parent="." instance=ExtResource("3_yhrwn")]
 position = Vector2(57, -14)
 come_from = "test_level"
+
+[node name="Mia" parent="." instance=ExtResource("5_j0wtg")]
+position = Vector2(960, -116)

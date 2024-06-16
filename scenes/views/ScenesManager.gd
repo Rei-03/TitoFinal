@@ -3,6 +3,8 @@ class_name SceneManager
 
 @export var player: CharacterBody2D
 @export var default_scene: String
+@export var interface: CanvasLayer
+
 var last_level: String
 var current_scene: Node
 var format_url = "res://scenes/levels/{scene}.tscn"
@@ -33,6 +35,7 @@ func _on_level_exit(level):
 	last_level = level
 	print('jojojo')
 	connect_areas()
+	interface.connect_areas()
 
 func connect_areas():
 	var areas = get_tree().get_nodes_in_group('EsceneExitArea')

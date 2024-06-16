@@ -37,9 +37,7 @@ var chats : int = 0
 var npc : int
 
 func _ready():
-	var dialogs = get_tree().get_nodes_in_group("DialogArea")
-	for dialog in dialogs:
-		dialog.connect('start_dialog',_on_dialog_area_start_dialog)
+	connect_areas()
 #Funcion mas importante
 func poner_TEXTO (TEXTO:String, NPC:String) -> void:
 	
@@ -72,7 +70,10 @@ func _on_boton_pressed():
 		get_tree().paused = false
 		hide()
 		 
-
+func connect_areas():
+	var dialogs = get_tree().get_nodes_in_group("DialogArea")
+	for dialog in dialogs:
+		dialog.connect('start_dialog',_on_dialog_area_start_dialog)
 
 
 

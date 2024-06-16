@@ -675,110 +675,121 @@ label = NodePath("../DialogStartLabel")
 [node name="Sprites" type="Node2D" parent="."]
 
 [node name="Cuello" type="Sprite2D" parent="Sprites"]
-position = Vector2(-2.1, -121.5)
-scale = Vector2(0.3, 0.3)
+position = Vector2(2.1, -121.5)
+rotation = 3.14159
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("3_31c08")
 
 [node name="ManoDerehca" type="Sprite2D" parent="Sprites"]
-position = Vector2(9.9, -72)
-scale = Vector2(0.3, 0.3)
+position = Vector2(-9.9, -72)
+rotation = 3.14159
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("5_7rrj4")
 
 [node name="BrazoSuperiorDerecho" type="Sprite2D" parent="Sprites"]
-position = Vector2(6.6, -106.8)
-scale = Vector2(0.3, 0.3)
+position = Vector2(-6.6, -106.8)
+rotation = 3.14159
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("17_idbhm")
 
 [node name="AntebrazoDerecho" type="Sprite2D" parent="Sprites"]
-position = Vector2(9, -86.1)
-scale = Vector2(0.3, 0.3)
+position = Vector2(-9, -86.1)
+rotation = 3.14159
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("20_72uw6")
 
 [node name="HombroDerecho" type="Sprite2D" parent="Sprites"]
-position = Vector2(6.3, -116.7)
-scale = Vector2(0.3, 0.3)
+position = Vector2(-6.3, -116.7)
+rotation = 3.14159
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("6_tjpkr")
 
 [node name="PiernaSuperiorDerecha" type="Sprite2D" parent="Sprites"]
-position = Vector2(4.84677, -69.5018)
-rotation = -0.169814
-scale = Vector2(0.3, 0.3)
+position = Vector2(-4.84677, -69.5018)
+rotation = -2.97178
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("7_rqlhu")
 
 [node name="PantorillaDerecha" type="Sprite2D" parent="Sprites"]
-position = Vector2(5.16616, -34.2036)
-rotation = -0.037296
-scale = Vector2(0.3, 0.3)
+position = Vector2(-5.16616, -34.2036)
+rotation = -3.1043
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("8_2324x")
 
 [node name="Cola" type="Sprite2D" parent="Sprites"]
-position = Vector2(-16.6702, -52.3192)
-rotation = 0.0368487
-scale = Vector2(0.3, 0.3)
+position = Vector2(16.6702, -52.3192)
+rotation = 3.10474
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("9_yl4vc")
 
 [node name="TorsoSuperior" type="Sprite2D" parent="Sprites"]
-position = Vector2(0.6, -108)
-scale = Vector2(0.3, 0.3)
+position = Vector2(-0.6, -108)
+rotation = 3.14159
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("10_x8y5q")
 
 [node name="TorsoInferior" type="Sprite2D" parent="Sprites"]
-position = Vector2(-2.4, -87.3)
-scale = Vector2(0.3, 0.3)
+position = Vector2(2.4, -87.3)
+rotation = 3.14159
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("11_ouaiu")
 
 [node name="PiernaSuperiorIzquierda" type="Sprite2D" parent="Sprites"]
-position = Vector2(-5.98525, -69.2996)
-rotation = 0.0527123
-scale = Vector2(0.3, 0.3)
+position = Vector2(5.98525, -69.2996)
+rotation = 3.08888
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("12_rq404")
 
 [node name="PantorrillaIzquierda" type="Sprite2D" parent="Sprites"]
-position = Vector2(-9.60048, -34.9424)
-rotation = 0.0527123
-scale = Vector2(0.3, 0.3)
+position = Vector2(9.60048, -34.9424)
+rotation = 3.08888
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("13_icjcr")
 
 [node name="PieDerecho" type="Sprite2D" parent="Sprites"]
-position = Vector2(9.50369, -6.22129)
-rotation = 0.0598554
-scale = Vector2(0.3, 0.3)
+position = Vector2(-9.50368, -6.22131)
+rotation = 3.08174
+scale = Vector2(0.299999, -0.299999)
 texture = ExtResource("14_wvnnp")
 
 [node name="PieIzquierdo" type="Sprite2D" parent="Sprites"]
-position = Vector2(-3.78187, -7.0804)
-rotation = -0.006337
-scale = Vector2(0.3, 0.3)
+position = Vector2(3.78187, -7.0804)
+rotation = -3.13526
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("15_otnxp")
 
 [node name="HombroIzquierdo" type="Sprite2D" parent="Sprites"]
-position = Vector2(-7.8, -117)
-scale = Vector2(0.3, 0.3)
+position = Vector2(7.8, -117)
+rotation = 3.14159
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("16_0jsdb")
 
 [node name="Cabeza" type="Sprite2D" parent="Sprites"]
-position = Vector2(-3.61303, -142.474)
-rotation = -0.164185
-scale = Vector2(0.3, 0.3)
+position = Vector2(3.61303, -142.474)
+rotation = -2.97741
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("4_knh4m")
 
 [node name="BrazoSuperiorIzquierdo" type="Sprite2D" parent="Sprites"]
-position = Vector2(-8.4, -107.4)
-scale = Vector2(0.3, 0.3)
+position = Vector2(8.4, -107.4)
+rotation = 3.14159
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("18_iuydl")
 
 [node name="AntebrazoIzquierdo" type="Sprite2D" parent="Sprites"]
-position = Vector2(-9, -89.1)
-scale = Vector2(0.3, 0.3)
+position = Vector2(9, -89.1)
+rotation = 3.14159
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("19_rfqpx")
 
 [node name="ManoIzquierda" type="Sprite2D" parent="Sprites"]
-position = Vector2(-8.4, -73.8)
-scale = Vector2(0.3, 0.3)
+position = Vector2(8.4, -73.8)
+rotation = 3.14159
+scale = Vector2(0.3, -0.3)
 texture = ExtResource("21_nysvy")
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
-scale = Vector2(0.3, 0.3)
+scale = Vector2(-0.3, 0.3)
 
 [node name="Base" type="Bone2D" parent="Skeleton2D"]
 position = Vector2(-1, -228)

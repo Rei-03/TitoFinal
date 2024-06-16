@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://be4nqjg80y3l"]
+[gd_scene load_steps=6 format=3 uid="uid://be4nqjg80y3l"]
 
 [ext_resource type="TileSet" uid="uid://bkl4sx35i5cv6" path="res://TileSets/forest.tres" id="1_c2bvi"]
 [ext_resource type="PackedScene" uid="uid://wtahwnwm8kj1" path="res://scenes/CustonNodes/exit_escene_area.tscn" id="2_n0cai"]
 [ext_resource type="Script" path="res://scenes/levels/Scene.gd" id="2_rmpns"]
 [ext_resource type="PackedScene" uid="uid://b7bx2lticad5l" path="res://scenes/CustonNodes/spawn_area.tscn" id="3_qsiai"]
+[ext_resource type="PackedScene" uid="uid://dcpr82mseaify" path="res://scenes/DialogEnemy/maton_1.tscn" id="5_ay1nv"]
 
 [node name="TileMap" type="TileMap"]
 tile_set = ExtResource("1_c2bvi")
@@ -19,3 +20,7 @@ go_to = "3"
 position = Vector2(63, -103)
 rotation = 1.4893
 come_from = "1"
+
+[node name="Maton1" parent="." instance=ExtResource("5_ay1nv")]
+position = Vector2(2242, 189)
+scale = Vector2(0.6, 0.6)

@@ -29,6 +29,7 @@ animations = [{
 [node name="Baron" type="Node2D"]
 
 [node name="AreaDialog" parent="." node_paths=PackedStringArray("label") instance=ExtResource("1_lwoor")]
+position = Vector2(-13, -1)
 path = "res://Dialogs/Baron.json"
 label = NodePath("../DialogStartLabel")
 
@@ -40,6 +41,8 @@ sprite_frames = SubResource("SpriteFrames_tocwi")
 frame_progress = 0.0199141
 
 [node name="DialogStartLabel" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -34.0
+offset_top = -183.0
+offset_right = 18.0
+offset_bottom = -160.0
 text = "Hablar"

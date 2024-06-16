@@ -6,13 +6,14 @@
 
 [node name="Root" type="Node2D"]
 
-[node name="INTERFAZ" parent="." instance=ExtResource("1_vfhh8")]
-visible = false
-
-[node name="ScenesManager" type="Node2D" parent="." node_paths=PackedStringArray("player")]
+[node name="ScenesManager" type="Node2D" parent="." node_paths=PackedStringArray("player", "interface")]
 script = ExtResource("2_caeun")
 player = NodePath("../Tito")
 default_scene = "1"
+interface = NodePath("../INTERFAZ")
 
 [node name="Tito" parent="." instance=ExtResource("1_6whkw")]
 position = Vector2(-96, 290)
+
+[node name="INTERFAZ" parent="." instance=ExtResource("1_vfhh8")]
+visible = false
