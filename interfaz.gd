@@ -25,10 +25,10 @@ const IMAGENES : Dictionary = {
 	'Nitrato' :   preload ("res://icon.svg"),
 	'Azufre'  :   preload ("res://icon.svg"),
 	'Carbon'  :   preload ("res://icon.svg"),
-	'Mia'     :   preload ("res://assets/Warrior/Individual Sprite/Edge-Idle/Warrior_Edge-Idle_1.png"),
+	'Mia'     :   preload ("res://assets/MIA/cabeza.png"),
 	'Baron'   :   preload ("res://assets/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png"),
-	'Malo1'  :   preload ("res://assets/Light Bandit/Idle/LightBandit_Idle_0.png"),
-	'Malo2'  :   preload ("res://assets/Heavy Bandit/Idle/HeavyBandit_Idle_0.png"),
+	'Malo1'  :   preload ("res://assets/Malo1/cabeza.png"),
+	'Malo2'  :   preload ("res://assets/Malo2/cabeza.png"),
 }
 
 
