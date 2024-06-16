@@ -932,100 +932,101 @@ shape = SubResource("RectangleShape2D_pq1l2")
 [node name="SkeletonParts" type="Node" parent="."]
 
 [node name="BrazoSupIzq" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-3.61664, -45.3326)
-rotation = 0.646109
+position = Vector2(17.6057, -33.5201)
+rotation = 0.455582
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("2_81y81")
 
 [node name="ManoIzq" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(23.5668, 12.9877)
-rotation = 0.437091
+position = Vector2(74.571, -7.03048)
+rotation = -0.948766
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("3_juurj")
 
 [node name="BrazoInfIzq" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(25.8001, -0.405245)
-rotation = 0.646109
+position = Vector2(61.8172, -11.6885)
+rotation = -0.739748
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("4_rknpv")
 
 [node name="PiernaIzqSup" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(21, 75)
-rotation = 0.233353
+position = Vector2(43.3235, 59.3036)
+rotation = -0.407176
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_q57q4")
 
 [node name="PiernaIzqInf" type="Sprite2D" parent="SkeletonParts"]
 visible = false
-position = Vector2(27, 88)
-rotation = 0.0296339
+position = Vector2(54.9784, 67.2691)
+rotation = 0.472765
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_kypq0")
 
 [node name="PieIzq" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(33, 122)
+position = Vector2(46.0167, 97.9673)
+rotation = 0.031497
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("7_bhxco")
 
 [node name="PiernaDerSup" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-13, 76)
-rotation = 0.106485
+position = Vector2(-24.073, 71.8087)
+rotation = 0.392839
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_a12dj")
 
 [node name="PiernaDerInf" type="Sprite2D" parent="SkeletonParts"]
 visible = false
-position = Vector2(-16.9433, 99.583)
-rotation = 0.106485
+position = Vector2(-38.8353, 91.1748)
+rotation = 0.749635
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("9_l6wv5")
 
 [node name="PieDer" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-16.3726, 125.561)
-rotation = 0.36636
+position = Vector2(-53.9578, 112.305)
+rotation = 1.00951
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_853wu")
 
 [node name="TorsoInferior" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-2.5, 40.5)
-rotation = -0.0417736
+position = Vector2(-4.04077, 39.0999)
+rotation = 0.222332
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("11_6rm58")
 
 [node name="TorsoSuperior" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(2.32848, -26.1404)
-rotation = 0.0710664
+position = Vector2(18.6281, -23.6587)
+rotation = 0.455582
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("12_iwp73")
 
 [node name="Cuello" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(1.97531, -53.6256)
-rotation = 0.028942
+position = Vector2(28.6107, -49.2694)
+rotation = 0.413458
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("13_gtxcs")
 
 [node name="Cabeza" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(10.8343, -108.609)
-rotation = 0.0662994
+position = Vector2(50.9154, -102.3)
+rotation = 0.301403
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("14_mrp2b")
 
 [node name="BrazoSupDer" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-14.1147, -33.2012)
-rotation = 0.0942743
+position = Vector2(6.55539, -41.2405)
+rotation = 0.67458
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("15_bdetv")
 
 [node name="ManoDer" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-29.3092, 15.1156)
-rotation = -0.103967
+position = Vector2(-0.0680373, 8.31549)
+rotation = -0.421241
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("16_m6f1r")
 
 [node name="BrazoInfDer" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-15.0522, -12.8205)
-rotation = -0.233546
-scale = Vector2(0.499999, 0.499999)
+position = Vector2(4.76187, -22.6742)
+rotation = -0.55082
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("17_hmfkr")
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
@@ -1077,7 +1078,6 @@ remote_path = NodePath("../../../../../../../SkeletonParts/Cabeza")
 [node name="ShoulderRight" type="Bone2D" parent="Skeleton2D/base/BodyDown/BodyUp"]
 position = Vector2(-28.1672, -53.0152)
 rotation = -0.493005
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, -29, -45)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/base/BodyDown/BodyUp/ShoulderRight"]
@@ -1098,7 +1098,6 @@ remote_path = NodePath("../../../../../../../SkeletonParts/BrazoInfDer")
 [node name="HandRight" type="Bone2D" parent="Skeleton2D/base/BodyDown/BodyUp/ShoulderRight/ArmRight"]
 position = Vector2(-64.5064, 46.7983)
 rotation = 0.513761
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, -34, 41)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/base/BodyDown/BodyUp/ShoulderRight/ArmRight/HandRight"]
@@ -1144,6 +1143,7 @@ remote_path = NodePath("../../../../SkeletonParts/PiernaIzqSup")
 [node name="LegsDownLeft" type="Bone2D" parent="Skeleton2D/base/LegsUpLeft"]
 position = Vector2(35, 107)
 rotation = 1.08366
+scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, 0, 77)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/base/LegsUpLeft/LegsDownLeft"]

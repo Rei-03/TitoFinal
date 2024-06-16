@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cq6r6cxq1bcrg"]
+[gd_scene load_steps=4 format=3 uid="uid://cq6r6cxq1bcrg"]
 
 [ext_resource type="Texture2D" uid="uid://nc2muerx3yub" path="res://assets/TITO TITAN 02  copia copia.jpg" id="1_52f52"]
 [ext_resource type="Script" path="res://scenes/views/Button.gd" id="1_m8qtn"]
+[ext_resource type="PackedScene" uid="uid://b7bx2lticad5l" path="res://scenes/CustonNodes/spawn_area.tscn" id="4_tdjlt"]
 
 [node name="Menu" type="Node2D"]
 
@@ -19,5 +20,9 @@ offset_right = 937.0
 offset_bottom = 471.0
 text = "Start"
 script = ExtResource("1_m8qtn")
+
+[node name="SpawnArea" parent="." instance=ExtResource("4_tdjlt")]
+position = Vector2(811, 326)
+come_from = "3"
 
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_pressed"]

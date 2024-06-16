@@ -12,7 +12,7 @@ visible = false
 [node name="ScenesManager" type="Node2D" parent="." node_paths=PackedStringArray("player")]
 script = ExtResource("2_caeun")
 player = NodePath("../Tito")
-default_scene = "test_level"
+default_scene = "1"
 
 [node name="Tito" parent="." instance=ExtResource("1_6whkw")]
-position = Vector2(43, -168)
+position = Vector2(-96, 290)
