@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://wtahwnwm8kj1"]
+
+[ext_resource type="Script" path="res://scenes/levels/ChangeSceneArea.gd" id="1_w7y2g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6yq3"]
+size = Vector2(25, 61)
+
+[node name="ExitEsceneArea" type="Area2D" groups=["EsceneExitArea"]]
+script = ExtResource("1_w7y2g")
+go_to = "1"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, -1)
+shape = SubResource("RectangleShape2D_s6yq3")

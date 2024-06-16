@@ -911,7 +911,7 @@ rest = Transform2D(1, 0, 0, 1, -13, 86)
 [node name="PieDer" type="Bone2D" parent="Skeleton2D/Base/PiernaDer/PantorrillaDer"]
 position = Vector2(-8, 139)
 rotation = 0.0971514
-scale = Vector2(0.999999, 0.999999)
+scale = Vector2(0.999997, 0.999997)
 rest = Transform2D(1, 0, 0, 1, -8, 139)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Skeleton2D/Base/PiernaDer/PantorrillaDer/PieDer"]

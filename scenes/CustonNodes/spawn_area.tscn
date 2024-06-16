@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7bx2lticad5l"]
+
+[ext_resource type="Script" path="res://scenes/CustonNodes/spawn_area.gd" id="1_l6cto"]
+
+[node name="SpawnArea" type="Marker2D" groups=["SpawnArea"]]
+position = Vector2(32, -3)
+script = ExtResource("1_l6cto")

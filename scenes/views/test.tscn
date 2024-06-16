@@ -9,9 +9,10 @@
 [node name="INTERFAZ" parent="." instance=ExtResource("1_vfhh8")]
 visible = false
 
-[node name="ScenesManager" type="Node2D" parent="."]
+[node name="ScenesManager" type="Node2D" parent="." node_paths=PackedStringArray("player")]
 script = ExtResource("2_caeun")
-default_scene = "1"
+player = NodePath("../Tito")
+default_scene = "test_level"
 
 [node name="Tito" parent="." instance=ExtResource("1_6whkw")]
-position = Vector2(92, 114)
+position = Vector2(43, -168)

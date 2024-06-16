@@ -926,108 +926,109 @@ collision_mask = 9
 script = ExtResource("1_u2frd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(5, 59)
+position = Vector2(-6, -176)
 shape = SubResource("RectangleShape2D_pq1l2")
 
 [node name="SkeletonParts" type="Node" parent="."]
 
 [node name="BrazoSupIzq" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(32.4701, 10.1212)
+position = Vector2(35.4701, -100.879)
 rotation = 0.455582
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("1_kwaiw")
 
 [node name="ManoIzq" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(64.5162, 25.6782)
+position = Vector2(67.5162, -85.3218)
 rotation = -0.948766
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("2_cpj64")
 
 [node name="BrazoInfIzq" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(46.4364, 25.5766)
+position = Vector2(49.4364, -85.4234)
 rotation = -0.739748
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("3_fmh78")
 
 [node name="PiernaIzqSup" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(14.8548, 48.719)
+position = Vector2(17.8548, -62.281)
 rotation = -0.407176
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_q2h5y")
 
 [node name="PiernaIzqInf" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(25.4826, 75.8985)
+position = Vector2(28.4826, -35.1015)
 rotation = 0.472765
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_hvjx5")
 
 [node name="PieIzq" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(25.085, 99.7283)
+position = Vector2(28.085, -11.2717)
 rotation = 0.031497
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("6_1vg8u")
 
 [node name="PiernaDerSup" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-10.6992, 51.667)
+position = Vector2(-7.69922, -59.333)
 rotation = 0.392839
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_iclgj")
 
 [node name="PiernaDerInf" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-26.4561, 81.0467)
+position = Vector2(-23.4561, -29.9533)
 rotation = 0.749635
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_blc33")
 
 [node name="PieDer" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-41.5786, 102.177)
+position = Vector2(-38.5786, -8.82347)
 rotation = 1.00951
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("9_1ym3a")
 
 [node name="TorsoInferior" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(2.99685, 23.6113)
+position = Vector2(5.99685, -87.3887)
 rotation = 0.222332
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_lkaq4")
 
 [node name="TorsoSuperior" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(11.8733, 0.265061)
+position = Vector2(14.8733, -110.735)
 rotation = 0.455582
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("11_iyqib")
 
 [node name="Cuello" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(18.5559, -16.5608)
+position = Vector2(21.5559, -127.561)
 rotation = 0.413458
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("12_ociio")
 
 [node name="Cabeza" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(27.0146, -20.8596)
+position = Vector2(30.0146, -131.86)
 rotation = 0.301403
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("13_3yxue")
 
 [node name="BrazoSupDer" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-3.4994, -8.53181)
-rotation = -0.037423
+position = Vector2(-0.499398, -119.532)
+rotation = -0.0374231
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("14_i2bec")
 
 [node name="ManoDer" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-1.4596, 27.408)
+position = Vector2(1.5404, -83.592)
 rotation = -1.06523
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("15_vxbdv")
 
 [node name="BrazoInfDer" type="Sprite2D" parent="SkeletonParts"]
-position = Vector2(-5.29292, 10.0344)
+position = Vector2(-2.29292, -100.966)
 rotation = -0.935002
 scale = Vector2(0.499999, 0.499999)
 texture = ExtResource("16_pxccu")
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
+position = Vector2(6, -222)
 
 [node name="base" type="Bone2D" parent="Skeleton2D"]
 position = Vector2(4, 98)
